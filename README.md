@@ -1,6 +1,8 @@
 # wsecufunzy
 Author: Ermenildo Castro
-How to run.
+Proctor instructions: timebox 3hrs.
+
+# How to run.
 1. Download files.
 2. Setup angular cli; and jdk locally.
 3. Run backend server: ./gradlew bootRun
