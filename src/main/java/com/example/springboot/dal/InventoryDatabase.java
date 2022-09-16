@@ -1,6 +1,6 @@
-package com.example.springboot;
+package com.example.springboot.dal;
 
-import com.example.springboot.Item.Product;
+import com.example.springboot.dal.Item.Product;
 import java.util.HashMap;
 import java.util.Map;
 

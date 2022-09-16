@@ -1,4 +1,4 @@
-package com.example.springboot;
+package com.example.springboot.dal;
 
 public class Item {
   public Item(Product type, long cost) {

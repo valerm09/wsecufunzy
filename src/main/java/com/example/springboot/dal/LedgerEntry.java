@@ -1,4 +1,4 @@
-package com.example.springboot;
+package com.example.springboot.dal;
 
 public class LedgerEntry {
   public final String transactionId; // Will be composite of items.

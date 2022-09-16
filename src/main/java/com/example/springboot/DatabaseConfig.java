@@ -1,7 +1,8 @@
 package com.example.springboot;
 
-import java.util.HashMap;
-import java.util.Map;
+import com.example.springboot.dal.CartDatabase;
+import com.example.springboot.dal.CustomerProfile;
+import com.example.springboot.dal.InventoryDatabase;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Scope;
@@ -13,6 +14,18 @@ public class DatabaseConfig {
   @Scope("singleton")
   public CartDatabase cartDatabase() {
     return new CartDatabase();
+  }
+
+  @Bean
+  @Scope("singleton")
+  public CustomerProfile customerProfile() {
+    return new CustomerProfile();
+  }
+
+  @Bean
+  @Scope("singleton")
+  public InventoryDatabase inventoryDatabase() {
+    return new InventoryDatabase();
   }
 
 }

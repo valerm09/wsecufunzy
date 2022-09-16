@@ -1,23 +1,24 @@
-package com.example.springboot;
+package com.example.springboot.dal;
 
-import com.example.springboot.Item.Product;
+import com.example.springboot.dal.Item.Product;
 import java.time.Instant;
 import java.util.HashMap;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.Map;
+import org.springframework.beans.factory.annotation.Autowired;
 
 /**
  * Cart is comprised OF items.
  */
 public class CartDatabase {
 
+  @Autowired
   private InventoryDatabase inventory;
+  @Autowired
   private CustomerProfile customer;
   private Map<Integer, List<Item>> productToQuantityItemsMap;
   public CartDatabase() {
-    inventory = new InventoryDatabase();
-    customer = new CustomerProfile();
     productToQuantityItemsMap = new HashMap<>();
     productToQuantityItemsMap.put(Product.SODA.ordinal(), new LinkedList<>());
     productToQuantityItemsMap.put(Product.CANDYBAR.ordinal(), new LinkedList<>());
