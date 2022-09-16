@@ -1,8 +1,8 @@
 # wsecufunzy
--Author: Ermenildo Castro
+Author: Ermenildo Castro
 
 
--Proctor instructions: timebox 3hrs.
+Proctor instructions: timebox 3hrs.
 
 # How to run.
 1. Download files.
