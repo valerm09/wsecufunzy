@@ -1,0 +1,2 @@
+# wsecufunzy
+For fun
